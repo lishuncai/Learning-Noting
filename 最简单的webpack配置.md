@@ -1,4 +1,4 @@
-# 最简单的webpack配置
+# 简单的webpack配置
 
 #### webpack.config.js
 
@@ -98,4 +98,37 @@
       new OptimizeCssAssetsPlugin()
     ],
   };
+```
+
+
+#### package.json文件
+
+```
+{
+  "name": "h5_active",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack-cli": "^3.3.11",
+    "webpack": "^4.41.6"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "lishuncai",
+  "license": "ISC"
+}
+
 ```
