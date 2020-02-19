@@ -1,6 +1,11 @@
-# git 配置多公钥.md
+# window 系统 git 配置多公钥.md
 
 [相关文章参考](https://segmentfault.com/a/1190000019271156)
+
+#### 创建ssh文件夹
+```
+ssh-keygen
+```
 
 #### 进入ssh 目录
 ```
