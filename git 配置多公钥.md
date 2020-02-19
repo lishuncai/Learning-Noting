@@ -13,10 +13,16 @@ ssh-keygen
 ```
 #### 生成SSH-Key
 ```
- ssh-keygen -t rsa -C "email@gitee.com" -f ~/.ssh/id_rsa_gitee
+ ssh-keygen -t rsa -C "email@gitee.com" -f id_rsa_gitee
  
- ssh-keygen -t rsa -C "email@github.com" -f ssh/id_rsa_github
+ ssh-keygen -t rsa -C "email@github.com" -f id_rsa_github
 ```
+
+#### 验证公钥
+```
+  验证: ssh -T git@github.com
+```
+
 #### 添加公钥
 将生成的公钥（.pub后缀）分别拷贝到远程仓库管理平台
 
