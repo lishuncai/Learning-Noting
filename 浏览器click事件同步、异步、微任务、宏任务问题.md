@@ -10,6 +10,16 @@
             Promise.resolve().then(()=>console.log('micro task2'))
         }
         document.body.click();
+        
+        // 验证同步、异步
+        for (var i = 0; i<10000; i++) {
+            console.log(i)
+            new Promise((res, rej)=>{
+                res('promise')
+            }).then((data)=>{
+                console.log(data)
+            })
+        }
 
 ```
 
